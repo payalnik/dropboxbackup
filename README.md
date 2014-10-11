@@ -1,9 +1,10 @@
 dropboxbackup
 =============
 
-A script to back up folders from your UNIX machine to Dropbox.
-Based by http://habrahabr.ru/post/236483/
+Based on http://habrahabr.ru/post/236483/
+
 Backs up a list of folders, /etc and MySQL databases and moves into Dropbox.
+
 Full updates on 1th and 15th of each months + incremental daily updates.
 
 You need to have 7z and mysqldump installed on your machine.
