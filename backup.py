@@ -109,8 +109,7 @@ def copytodropbox(client,backupName):
 
 def cleanup(backupName):
   os.system("rm -r backup/*")
-  if delete_file:
-      os.system("rm " + backupName)
+  if delete_file: os.system("rm " + backupName)
 
 if __name__ == "__main__":
 

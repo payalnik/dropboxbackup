@@ -14,5 +14,6 @@ You need to have 7z and mysqldump installed on your machine.
 1. Copy app key and secret to config.py
 1. Create a folder and put script and config files there
 1. Set up DB password, list of folders to backup and email for error messages in config.py
+1. Set delete_file option in config to True if you want to remove the backup files from your machine after uploading
 1. Run the script to authorize app the first time
 1. Add a bash script that runs the script to /etc/cron.daily
