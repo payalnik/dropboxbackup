@@ -14,14 +14,14 @@ if curDay == "01" or curDay == "15" or (len(sys.argv) >1 and sys.argv[1]=='full'
     print "Full backup init"
     isfull = True
 else:
-    isfull = False
     print "Incremental backup init"
+    isfull = False
     
 print "curDate:", curDate
 
 # Include the Dropbox SDK libraries
 from dropbox import client, rest, session
-from backupcreds import *
+from config import *
 
 # ACCESS_TYPE should be 'dropbox' or 'app_folder' as configured for your app
 ACCESS_TYPE = 'app_folder'
