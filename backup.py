@@ -102,13 +102,7 @@ def copytodropbox(client,backupName):
     uploader = client.get_chunked_uploader(f, fsize)
     print "Uploading file", fsize, "bytes..."
     while uploader.offset < fsize:
-      try:
-        upload = uploader.upload_chunked()
-        print "."
-      except rest.ErrorResponse, e:
-        # perform error handling and retry logic
-        print "error uploading file!"
-        delete_file = False
+      upload = uploader.upload_chunked()
     uploader.finish("/"+backupName)
     f.close()
     print "File uploaded successfully."
